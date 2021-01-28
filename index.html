@@ -18,10 +18,10 @@
             QR-Code-Generator
         </div>
         <div class="input">
-            <input type="text" id="input_id" class="input block fixed" placeholder="Type your url/ text here">
+            <input type="text" id="input_id" class="input block fixed" placeholder="Type your url/ text here" oninput="inputchange()">
             <button class="submit-btn block" id="submit_id" onclick="generate()">Generate QR</button>
             <div class="qr-frame" id="qr-frame-id">
-            <center><iframe name="qr" style="height: 150px; width: 150px;"></iframe></center>
+            <center><img id="qr-img" style="height: 150px; width: 150px;"></iframe></center>
             </div>
         </div>
     </div>

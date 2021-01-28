@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Give-me-URLs</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/gmu.png" type="image/png">
+    <link href="blocks.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />  
+</head>
+<body>
+    <div class="main block fixed" id="main_id">
+        <button class="dnbtn block" id="night-btn" onclick="changenight()">🌙</button>
+        <button class="dnbtn block" id="day-btn" onclick="changeday()">☀️</button>
+        <div class="head block fixed">
+            QR-Code-Generator
+        </div>
+        <div class="input">
+            <input type="text" id="input_id" class="input block fixed" placeholder="Type your url/ text here">
+            <button class="submit-btn block" id="submit_id" onclick="generate()">Generate QR</button>
+            <div class="qr-frame" id="qr-frame-id">
+            <center><iframe name="qr" style="height: 150px; width: 150px;"></iframe></center>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
